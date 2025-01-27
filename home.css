@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "driftwood";
+    src: url("CustomFonts/Driftwood.ttf");
+}
+
+.test{
+    font-family: "driftwood";
+}
