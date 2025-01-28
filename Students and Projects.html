@@ -10,49 +10,101 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">MRHS Woodworking</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="About the Teacher.html">About the Teacher</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="Safety Info.html">Safety Info</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="classes.html">Classes</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="WHS.html">Woodworking Honors Society</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+        <section class="hero text-center" aria-label="home" id="home">
+
+            <ul class="hero-slider" data-hero-slider>
+    
+              <li class="slider-item active" data-hero-slider-item>
+    
+                <div class="slider-bg">
+                  <img src="main-imgs/dc6fd7e1-3875-4694-b540-39552d39fa0d.jpg" width="1880" height="950" alt="" class="img-cover">
                 </div>
-            </div>
-        </nav>
+    
+                <p class="label-2 section-subtitle slider-reveal">Tradational & Reliable</p>
+    
+                <h1 class="display-1 hero-title slider-reveal">
+                  Toys You Can <br>
+                  Count On
+                </h1>
+    
+                <p class="body-2 hero-text slider-reveal">
+                  Everyone can enjoy our toys together
+                </p>
+    
+                <a href="products.html" class="btn btn-primary slider-reveal">
+                  <span class="text text-1">View Our Products</span>
+                  <span class="text text-2" aria-hidden="true">View Our Products</span>
+                </a>
+    
+              </li>
+    
+              <li class="slider-item" data-hero-slider-item>
+    
+                <div class="slider-bg">
+                  <img src="main-imgs/89a3d2c6-14bf-43ec-964f-b97d3cf5901c.jpg" width="1880" height="950" alt="" class="img-cover">
+                </div>
+    
+                <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+    
+                <h1 class="display-1 hero-title slider-reveal">
+                  Toys Built <br>
+                  By Hand
+                </h1>
+    
+                <p class="body-2 hero-text slider-reveal">
+                  Handmade Toys built to provide a rich experience
+                </p>
+    
+                <a onclick="document.getElementById('about').scrollIntoView()" class="btn btn-primary slider-reveal pointer">
+                  <span class="text text-1">Learn Our Story</span>
+                  <span class="text text-2">Learn Our Story</span>
+                </a>
+    
+              </li>
+    
+              <li class="slider-item" data-hero-slider-item>
+    
+                <div class="slider-bg">
+                  <img src="main-imgs/85d7de21-3691-4248-8fbc-2428f81f11cc.jpg" width="1880" height="950" alt="" class="img-cover">
+                </div>
+    
+                <p class="label-2 section-subtitle slider-reveal">Amazing & Unique</p>
+    
+                <h1 class="display-1 hero-title slider-reveal">
+                  Where Every Toy <br>
+                  Tells Its Own Story
+                </h1>
+    
+                <p class="body-2 hero-text slider-reveal">
+                  Each toy is built to shocase a new story, A story that brings creativity and uniqueness
+                  together
+                </p>
+    
+                <a onclick="document.getElementById('contact').scrollIntoView()"" class="btn btn-primary slider-reveal pointer">
+                  <span class="text text-1">Contact Us</span>
+                  <span class="text text-2">Contact Us</span>
+                </a>
+    
+              </li>
+    
+            </ul>
+    
+            <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+              <ion-icon name="chevron-back"></ion-icon>
+            </button>
+    
+            <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </button>
+    
+          </section>
+    
+    
         <!-- place navbar here -->
     </header>
     <main>
