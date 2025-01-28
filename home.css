@@ -6,3 +6,9 @@
 .test{
     font-family: "driftwood";
 }
+
+
+.bg-hero-image{
+    background-image: url('imgs/working on it'); /*gotta get that ASAP*/
+    background-position: center center;
+}
