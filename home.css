@@ -61,3 +61,15 @@
     margin:0;
     text-transform:uppercase;
 }
+
+.placeholder {
+    background-color: grey;
+}
+
+.stagger-left {
+    margin-left: 10vw;
+}
+
+.stagger-right {
+    margin-left: 75vw;
+}
