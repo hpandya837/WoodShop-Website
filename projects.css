@@ -1077,7 +1077,7 @@ body.nav-active {
 
 /*-----------------------------------*\
     #SERVICE
-  \*-----------------------------------*/
+  \*-----------------------------------*/ 
 
 .service .section-title {
   margin-block-end: 16px;
@@ -1131,6 +1131,19 @@ body.nav-active {
 }
 
 
+/* Add this to your existing CSS */
+
+.mirrored {
+  transform: scaleX(-1); /* Flip horizontally */
+}
+
+.mirrored .card-banner img {
+  transform: scaleX(-1); /* Flip the image within the card */
+}
+
+.mirrored .card-content {
+  text-align: right; /* Align text to the right for mirrored effect */
+}
 
 
 
