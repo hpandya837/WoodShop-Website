@@ -13,10 +13,19 @@
     background-position: center center;
 }
 
-
 .heropanel--video {
     font-family:sans-serif;
     min-height:500px;
+    width:70%;
+    margin-left: 15%;
+    background-color: grey;
+}
+
+@media (width <= 576px) {
+    .heropanel--video {
+        width: 100%;
+        margin: 0px;
+    }
 }
 
 @keyframes gm-slidein {
@@ -62,14 +71,18 @@
     text-transform:uppercase;
 }
 
+.stagger-left {
+    margin-left: 10%;
+}
+
+.stagger-right {
+    margin-left: 67%;
+}
+
 .placeholder {
     background-color: grey;
 }
 
-.stagger-left {
-    margin-left: 10vw;
-}
-
-.stagger-right {
-    margin-left: 75vw;
+.max-width {
+    width: 100%;
 }
