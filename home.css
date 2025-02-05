@@ -71,16 +71,15 @@
     text-transform:uppercase;
 }
 
-.stagger-left {
-    margin-left: 10%;
+.staggered-card:nth-child(odd) {
+    margin-left: 30%;
 }
-
-.stagger-right {
-    margin-left: 67%;
+.staggered-card:nth-child(even) {
+    margin-right: 30%;
 }
 
 .placeholder {
-    background-color: grey;
+    background-color: grey; /*so we can see the full size of any given item*/
 }
 
 .max-width {
