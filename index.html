@@ -1,141 +1,253 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title> MRHS Woodworking</title>
+    <title>MRHS Woodworking</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="home.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #000;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-brand:hover,
+        .nav-link:hover {
+            color: #ffa500 !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://www.gordonmac.com/wp-content/uploads/storm-1.png') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero h1,
+        .hero p {
+            z-index: 1;
+        }
+
+        /* Card Styling */
+        .staggered-card .card {
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .staggered-card .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .staggered-card img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .card-title {
+            color: #ffa500;
+            font-weight: bold;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffa500 !important;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-    <a href="index.html">index</a>
-    <a href="About the Teacher.html">About the Teacher</a>
-    <a href="classes.html">classes</a>
-    <a href="Safety Info.html">Safety Info</a>
-    <a href="Students and Projects.html">Students and Projects</a>
-    <a href="WHS.html">WHS</a>
-    <br>
-        <header class="heropanel--video placeholder"
-            data-vide-bg="mp4: https://www.gordonmac.com/wp-content/uploads/storm-1.mp4, poster: https://www.gordonmac.com/wp-content/uploads/storm-1.png"
-            data-vide-options="posterType: png, loop: false, muted: true, position: 50% 50%">
-            <div class="heropanel__content">
-                <h1><a href="/" rel="home">Title</a></h1>
-                <p>Subtitle</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">MRHS Woodworking</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About the Teacher.html">About the Teacher</a></li>
+                    <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Safety Info.html">Safety Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Students and Projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="WHS.html">WHS</a></li>
+                </ul>
             </div>
-        </header>
+        </div>
+    </nav>
 
-        <!-- place navbar here -->
-        <div class="container py-5">
-          <div class="row d-flex flex-column align-items-center">
-              <div class="col-md-6 staggered-card mb-4">
-                  <div class="card">
-                    <img src="#" class="card-img-top" alt="...">
-                      <div class="card-body text-center">
-                          <h5 class="card-title">Woodworking Honors Society</h5>
-                          <p class="card-text">This is a staggered card aligned to the right.</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6 staggered-card mb-4">
+    <!-- Hero Section with Slider -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to MRHS Woodworking</h1>
+            <p>Discover the art of woodworking.</p>
+            <!-- You can add a slider here using JavaScript if needed -->
+        </div>
+    </section>
+
+    <!-- Staggered Cards Section -->
+    <div class="container py-5">
+        <div class="row d-flex flex-column align-items-center">
+            <!-- Card 1: Woodworking Honors Society -->
+            <div class="col-md-6 staggered-card mb-4">
                 <div class="card">
-                  <img src="#" class="card-img-top" alt="...">
+                    <img src="#" class="card-img-top" alt="Woodworking Honors Society">
                     <div class="card-body text-center">
-                        <h5 class="card-title">About the Teachers</h5>
-                        <p class="card-text">This is a staggered card aligned to the right.</p>
+                        <h5 class="card-title">Woodworking Honors Society</h5>
+                        <p class="card-text">Explore opportunities with the Woodworking Honors Society.</p>
+                        <a href="WHS.html" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Card 2: About the Teachers -->
             <div class="col-md-6 staggered-card mb-4">
-              <div class="card">
-                <img src="#" class="card-img-top" alt="...">
-                  <div class="card-body text-center">
-                      <h5 class="card-title">Safety Info</h5>
-                      <p class="card-text">This is a staggered card aligned to the right.</p>
-                  </div>
-              </div>
-          </div>
-          </div>
-      </div>
-        
-        <!--Hero Start-->
-        <div class="row g-0">
-            <div class="col-6">
-                <div class="placeholder max-width">IMAGE</div>
+                <div class="card">
+                    <img src="#" class="card-img-top" alt="About the Teachers">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">About the Teachers</h5>
+                        <p class="card-text">Meet our passionate woodworking instructors.</p>
+                        <a href="About the Teacher.html" class="btn btn-primary">Meet Them</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-6">
-                <div class="placeholder max-width text-center">TEXT</div>
+
+            <!-- Card 3: Safety Info -->
+            <div class="col-md-6 staggered-card mb-4">
+                <div class="card">
+                    <img src="#" class="card-img-top" alt="Safety Info">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Safety Info</h5>
+                        <p class="card-text">Important safety guidelines for woodworking.</p>
+                        <a href="Safety Info.html" class="btn btn-primary">View Guidelines</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--Hero END-->
+    </div>
 
-        <div class="row mt-3">
-            <div class="col-4 col-md-4 col-sm-12">
-                <div class="card mb-3" style="max-width: 540px;">
+    <!-- Additional Cards Section -->
+    <div class="container mt-3">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        <div class="col-md-4">
+                            <img src="..." class="img-fluid rounded-start" alt="...">
                         </div>
-                      </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Classes</h5>
+                                <p class="card-text">Explore our woodworking classes.</p>
+                                <a href="classes.html" class="btn btn-secondary">Explore</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
-            <div class="col-4 col-md-4 col-sm-12">
-                <div class="card mb-3" style="max-width: 540px;">
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        <div class="col-md-4">
+                            <img src="..." class="img-fluid rounded-start" alt="...">
                         </div>
-                      </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Projects</h5>
+                                <p class="card-text">See student creations and projects.</p>
+                                <a href="Students and Projects.html" class="btn btn-secondary">View Projects</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
-            <div class="col-4 col-md-4 col-sm-12">
-                <div class="card mb-3" style="max-width: 540px;">
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card mb-3">
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        <div class="col-md-4">
+                            <img src="..." class="img-fluid rounded-start" alt="...">
                         </div>
-                      </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Woodworking Honors Society</h5>
+                                <p class="card-text">Learn about our honors society.</p>
+                                <a href="WHS.html" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <footer class="placeholder max-width">
-            FOOTER
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 MRHS Woodworking | Designed with ❤️ in Orange & Black |
+        <a href="#">Privacy Policy</a> |
+        Follow us on
+        <a href="#">Instagram</a> and
+        <a href="#">Facebook</a>.
+    </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
