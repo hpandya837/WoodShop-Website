@@ -85,3 +85,71 @@
 .max-width {
     width: 100%;
 }
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Ensure text remains visible */
+.hero-content {
+    position: absolute;
+    z-index: 2; /* Ensure text appears above video or image */
+    width: 80%; /* Prevent text from being too wide */
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2rem; /* Adjust font size for mobile */
+}
+
+.hero-content p {
+    font-size: 1rem;
+}
+
+/* Ensure video and image behave correctly */
+.hero-video, .hero-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ensure image is displayed on mobile */
+.hero-image {
+    display: none; /* Default hidden */
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+    .hero-video {
+        display: none; /* Hide video */
+    }
+    .hero-image {
+        display: block; /* Show image */
+    }
+    
+    .hero-content {
+        width: 90%; /* Make text fit well on smaller screens */
+        padding: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem; /* Make text smaller for mobile */
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
