@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+    --color-3: #f5f5f5;
+    --color-4: #242424;
+}
+
+.containerV {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.file-container {
+    --rotation: 0deg;
+    --border-color: #f5f5f5;
+    --hover-text-color: #f5f5f5;
+    width: 388px;
+    height: 378px;
+    border: 3px solid transparent;
+    border-radius: 1em;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    position: relative;
+    overflow: hidden;
+    padding: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-container {
+    --hover-text-color: #f5f5f5;
+}
+
+.file-container .text {
+    color: #f5f5f5;
+    transition: color 0.3s ease;
+}
+
+.file-container:hover .text {
+    color: var(--hover-text-color);
+}
+
+.inner-container {
+    width: 354px;
+    height: 344px;
+    background-color: black;
+    border-radius: 1em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: 
+        linear-gradient(45deg, rgba(230, 230, 230, 0.15) 25%, transparent 25%, transparent 75%, rgba(240, 240, 240, 0.15) 75%),
+        linear-gradient(-45deg, rgba(240, 240, 240, 0.15) 25%, transparent 25%, transparent 75%, rgba(230, 230, 230, 0.15) 75%);
+    background-size: 20.84px 20.84px;
+}
+
+.image-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contentV {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 16px;
+}
+
+.textV {
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: -.01em;
+    line-height: normal;
+    margin-bottom: 5px;
+    width: auto;
+    color: #f5f5f5;
+    transition: color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.titleV {
+    position: relative;
+    z-index: 10;
+    padding: 2px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.text-effect {
+    clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+    transform-origin: center;
+    transition: all cubic-bezier(.1,.5,.5,1) 0.4s;
+    position: absolute;
+    left: -4px;
+    right: -4px;
+    top: -4px;
+    bottom: -4px;
+    z-index: 0;
+}
+
+.file-container:hover .text-effect {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.description {
+    font-size: 14px;
+    color: white;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.file-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
