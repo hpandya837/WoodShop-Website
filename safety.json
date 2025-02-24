@@ -1,32 +1,42 @@
 [
     {
-      "title": "Card 1",
-      "description": "This is the description for Card 1.",
-      "image": "https://via.placeholder.com/300/FF0000/FFFFFF?text=Card+1"
+      "title": "Band Saw",
+      "image": "safetyPDFs/Band Saw Safety 2024.pdf"
     },
     {
-      "title": "Card 2",
-      "description": "This is the description for Card 2.",
-      "image": "https://via.placeholder.com/300/00FF00/FFFFFF?text=Card+2"
+      "title": "Belt Sander",
+      "image": "safetyPDFs/Belt Sander Safety WS 2024.pdf"
     },
     {
-      "title": "Card 3",
-      "description": "This is the description for Card 3.",
-      "image": "https://via.placeholder.com/300/0000FF/FFFFFF?text=Card+3"
+      "title": "Chisel",
+      "image": "safetyPDFs/Chisel Safety WS 2024.pdf"
     },
     {
-      "title": "Card 4",
-      "description": "This is the description for Card 4.",
-      "image": "https://via.placeholder.com/300/FFFF00/FFFFFF?text=Card+4"
+      "title": "Drill Press",
+      "image": "safetyPDFs/Drill Press Safety WS 2024.pdf"
     },
     {
-      "title": "Card 5",
-      "description": "This is the description for Card 5.",
-      "image": "https://via.placeholder.com/300/FF00FF/FFFFFF?text=Card+5"
+      "title": "Jointer",
+      "image": "safetyPDFs/Jointer Safety WS 2024.pdf"
     },
     {
-      "title": "Card 6",
-      "description": "This is the description for Card 6.",
-      "image": "https://via.placeholder.com/300/00FFFF/FFFFFF?text=Card+6"
+      "title": "Miter Saw",
+      "image": "safetyPDFs/Miter Saw Safety WS 2024.pdf"
+    },
+    {
+      "title": "Planer",
+      "image": "safetyPDFs/Planer Safety WS 2024.pdf"
+    },
+    {
+      "title": "Radial Arm Saw",
+      "image": "safetyPDFs/Radial Arm Saw Safety WS 2024.pdf"
+    },
+    {
+      "title": "Router",
+      "image": "safetyPDFs/Router Safety WS 2024.pdf"
+    },
+    {
+      "title": "Table Saw",
+      "image": "safetyPDFs/Table Saw Safety WS 2024.pdf"
     }
   ]
