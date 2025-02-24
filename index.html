@@ -12,92 +12,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <!--VUE-->
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="home.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            color: #333;
-        }
-
-        /* Navbar Styling */
-        .navbar {
-            background-color: #000;
-        }
-
-        .navbar-brand,
-        .nav-link {
-            color: #fff !important;
-        }
-
-        .navbar-brand:hover,
-        .nav-link:hover {
-            color: #ffa500 !important;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: url('https://www.gordonmac.com/wp-content/uploads/storm-1.png') no-repeat center center/cover;
-            height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-        }
-
-        .hero h1,
-        .hero p {
-            z-index: 1;
-        }
-
-        /* Card Styling */
-        .staggered-card .card {
-            border: none;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-
-        .staggered-card .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .staggered-card img {
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-
-        .card-title {
-            color: #ffa500;
-            font-weight: bold;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: #000;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer a {
-            color: #ffa500 !important;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="css files/home.css">
+   
 </head>
 
 <body>
@@ -148,18 +64,22 @@
                 <h1 class="drift display-1">Welcome to MRHS Woodworking</h1>
                 <p class="drift display-4">Discover the art of woodworking</p>
             </div>
+            <div class="scrollBtn">
+                <h6>scroll</h6>
+                <span></span>
+              </div>
         </section>
     </div>
     
     
 
     <!-- Staggered Cards Section -->
-    <div class="container py-5">
+    <div class="container py-5 mt-5  bgstyle">
         <div class="row d-flex flex-column align-items-center">
             <!-- Card 1: Woodworking Honors Society -->
             <div class="col-md-6 staggered-card mb-4">
                 <div class="card">
-                    <img src="#" class="card-img-top" alt="Woodworking Honors Society">
+                    <img src="homeIMG/Firefly -WHS- illustration on wood grain 88870.jpg" class="card-img-top" alt="Woodworking Honors Society">
                     <div class="card-body text-center">
                         <h5 class="card-title">Woodworking Honors Society</h5>
                         <p class="card-text">Explore opportunities with the Woodworking Honors Society.</p>
@@ -171,7 +91,7 @@
             <!-- Card 2: About the Teachers -->
             <div class="col-md-6 staggered-card mb-4">
                 <div class="card">
-                    <img src="#" class="card-img-top" alt="About the Teachers">
+                    <img src="homeIMG/Firefly -Teachers- written on wood grain round dark log 25664.jpg" class="card-img-top" alt="About the Teachers">
                     <div class="card-body text-center">
                         <h5 class="card-title">About the Teachers</h5>
                         <p class="card-text">Meet our passionate woodworking instructors.</p>
@@ -183,7 +103,7 @@
             <!-- Card 3: Safety Info -->
             <div class="col-md-6 staggered-card mb-4">
                 <div class="card">
-                    <img src="#" class="card-img-top" alt="Safety Info">
+                    <img src="homeIMG/Firefly -Safety- written on wood grain round dark log 83573.jpg" class="card-img-top" alt="Safety Info">
                     <div class="card-body text-center">
                         <h5 class="card-title">Safety Info</h5>
                         <p class="card-text">Important safety guidelines for woodworking.</p>
@@ -202,7 +122,7 @@
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
+                            <img src="homeIMG/Firefly -Classes- written on wood grain round dark log firey 14851.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -220,7 +140,7 @@
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
+                            <img src="homeIMG/Firefly -Projects- written on wood grain round dark log firey 14851.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -238,7 +158,7 @@
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
+                            <img src="homeIMG/Firefly -WoodShop- written on wood grain round dark log firey 60397.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -261,7 +181,7 @@
         <a href="#">Instagram</a> and
         <a href="#">Facebook</a>.
     </footer>
-    <script src="home.js"></script>
+    <script src="js files/home.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
