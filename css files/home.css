@@ -270,10 +270,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .staggered-card:nth-child(odd) {
-    margin-left: 30%;
+    margin-left: 25%;
 }
 .staggered-card:nth-child(even) {
-    margin-right: 30%;
+    margin-left: 65%;
 }
 
 .placeholder {

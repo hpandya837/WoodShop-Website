@@ -59,7 +59,7 @@
                             <embed :src="card.image" type="application/pdf" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">{{ card.title }}</h5>
-                                <a :href="card.image" class="btn" target="_blank">Learn More</a>
+                                <a :href="card.image" class="btn" target="_blank">Open PDF in new tab</a>
                             </div>
                         </div>
                     </div>
@@ -70,8 +70,10 @@
             </div>
         </div> <!-- APP END -->
     </main>
-    <footer>
-        <!-- place footer here -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 MRHS Woodworking. All rights reserved.</p>
+        </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
