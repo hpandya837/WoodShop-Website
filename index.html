@@ -13,7 +13,62 @@
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <!--VUE-->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css files/home.css">
-   
+   <style>
+        /* Adjustments for the staggered cards */
+        .staggered-card:nth-child(odd) { /* Odd-numbered cards */
+            margin-left: 10px; /* Default push to the right */
+        }
+
+        .staggered-card:nth-child(even) { /* Even-numbered cards */
+            margin-right: 10px; /* Default push to the left */
+        }
+
+        /* Specific adjustments for each card */
+        .staggered-card:nth-child(1) { /* First card */
+            margin-left: 30px; /* More to the right */
+            margin-right: auto; /* Override any right margin */
+        }
+
+        .staggered-card:nth-child(2) { /* Second card */
+            margin-right: 30px; /* More to the left */
+            margin-left: auto; /* Override any left margin */
+        }
+
+        .staggered-card:nth-child(3) { /* Third card */
+            margin-left: 30px; /* More to the right */
+            margin-right: auto; /* Override any right margin */
+        }
+
+        /* Media query for smaller screens (e.g., tablets) */
+        @media (max-width: 768px) {
+            .staggered-card:nth-child(1) {
+                margin-left: 20px;  /* Smaller adjustment */
+            }
+
+            .staggered-card:nth-child(2) {
+                margin-right: 20px; /* Smaller adjustment */
+            }
+
+            .staggered-card:nth-child(3) {
+                margin-left: 20px;  /* Smaller adjustment */
+            }
+        }
+
+        /* Media query for even smaller screens (e.g., phones) */
+        @media (max-width: 576px) {
+            .staggered-card:nth-child(1) {
+                margin-left: 0; /* Remove adjustment */
+            }
+
+            .staggered-card:nth-child(2) {
+                margin-right: 0; /* Remove adjustment */
+            }
+
+            .staggered-card:nth-child(3) {
+                margin-left: 0; /* Remove adjustment */
+            }
+        }
+   </style>
 </head>
 
 <body>
@@ -91,7 +146,7 @@
             </div>
 
             <!-- Card 2: About the Teachers -->
-            <div class="col-md-6 staggered-card mb-4">
+            <div class="col-md-6 staggered-card mb-4 ">
                 <div class="card">
                     <img src="homeIMG/Firefly -Teachers- written on wood grain round dark log 25664.jpg" class="card-img-top" alt="About the Teachers">
                     <div class="card-body text-center">
@@ -114,9 +169,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Additional Cards Section -->
+    </div>... <!-- Additional Cards Section -->
     <div class="container mt-3">
         <div class="row">
             <!-- Card 1 -->
@@ -164,9 +217,9 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Woodworking Honors Society</h5>
-                                <p class="card-text">Learn about our honors society.</p>
-                                <a href="WHS.html" class="btn btn-secondary">Learn More</a>
+                                <h5 class="card-title">Mr.D's WoodShop</h5>
+                                <p class="card-text">Learn More on Mr.D's Website.</p>
+                                <a href="https://sites.google.com/view/mrdwoodshop/home?authuser=0" class="btn btn-secondary">Learn More</a>
                             </div>
                         </div>
                     </div>
