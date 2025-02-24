@@ -154,10 +154,10 @@ p {
   left: 0;
 }
 #section2 .image {
-  background-image: url("https://lh6.googleusercontent.com/Ey2muRz7Dzw4_A_SZGlm9KcCx77mjBRHdqKhNtOQVMIDXH3ErnTBjbv3m4Pw-aNWZHtqZ56pc8vawNregq37XSpyXAIje9adtfItNOuMkfxaYXvM=w1280 ");
+  background-image: url("/introwood.jpg");
 }
 #section3 .image {
-  background-image: url("https://lh4.googleusercontent.com/fgBgGKdXRbgwijG1ROTe-kfDOyBFz_H54mM9DVJEMe1RdYJELxAQx5KQV1AX587A7jv7Nz6aYMoPP2PofdVVSOJsA2nZdWPzGGCf8u4j4cqV2jG5=w1280");
+  background-image: url("/advwood.jpg");
 }
 #section4 .image {
   background-image: url("https://www.yudiz.com/codepen/studio-r/bg-office.jpg");
