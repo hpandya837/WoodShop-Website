@@ -154,10 +154,10 @@ p {
   left: 0;
 }
 #section2 .image {
-  background-image: url("/introwood.jpg");
+  background-image: url("introwood.jpg");
 }
 #section3 .image {
-  background-image: url("/advwood.jpg");
+  background-image: url("advwood.jpg");
 }
 #section4 .image {
   background-image: url("https://www.yudiz.com/codepen/studio-r/bg-office.jpg");
