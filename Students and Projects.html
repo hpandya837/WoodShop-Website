@@ -1,336 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRHS Woodworking</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Students and Famous Projects</title>
-  <meta name="title" content="Students and Famous Projects">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css files/home.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="imgs/lab caot.jpg">
+    <style>
+        /* Hero Panel Styles */
+        .heropanel {
+            background: url(Firefly\ woodshop\ projects\ 71402.jpg) center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 10rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+        .heropanel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
 
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+        .heropanel__content {
+            position: relative;
+            z-index: 1;
+        }
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="css files/projects.css">
-  <link rel="stylesheet" href="css files/second.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        .heropanel h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
 
-
-  <!-- 
-    - preload images
-  -->
-  <link rel="icon" href="imgs/lab caot.jpg">
-
+        .heropanel p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 
-<body id="top">
+<body>
+    <!-- Navigation -->
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <h2>WoodShop</h2>
+        </div>
+        
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="About the Teacher.html">Teachers</a></li>
+            <li><a href="Students and Projects.html">students and Projects </a></li>
+            <li><a href="WHS.html">WHS </a></li>
+            <li><a href="Safety Info.html">Safety Information </a></li>
 
-  <!-- 
-    - #PRELOADER
-  -->
-
-  <div class="preload" data-preaload>
-    <div class="circle"></div>
-    <p class="text">Students and Famous Projects</p>
-  </div>
-
-
-
-
-
-  <!-- 
-    - #TOP BAR
-  -->
-
-
-
-
-
-
-  <!-- 
-    - #HEADER
-  -->
-
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero text-center" aria-label="home" id="home">
-
-        <ul class="hero-slider" data-hero-slider>
-
-          <li class="slider-item active" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="main-imgs/dc6fd7e1-3875-4694-b540-39552d39fa0d.jpg" width="1880" height="950" alt=""
-                class="img-cover">
-            </div>
-
-            <p class="label-2 section-subtitle slider-reveal">Lorem ipsum dolor sit.</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              WoodShop <br>
-
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-
-            <a href="products.html" class="btn btn-primary slider-reveal">
-              <span class="text text-1">Lorem, ipsum dolor.</span>
-              <span class="text text-2" aria-hidden="true">Lorem, ipsum dolor.</span>
-            </a>
-
-          </li>
-
-          <li class="slider-item" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="imgs/ThorImageForTest.jpg" width="1880" height="950" alt="" class="img-cover">
-            </div>
-
-            <p class="label-2 section-subtitle slider-reveal">Lorem, ipsum dolor.</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Lorem ipsum dolor sit.
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Lorem ipsum dolor, sit amet consectetur adipisicing.
-            </p>
-
-            <a onclick="document.getElementById('about').scrollIntoView()"
-              class="btn btn-primary slider-reveal pointer">
-              <span class="text text-1">Learn Our Story</span>
-              <span class="text text-2">Learn Our Story</span>
-            </a>
-
-          </li>
-
-          <li class="slider-item" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="main-imgs/85d7de21-3691-4248-8fbc-2428f81f11cc.jpg" width="1880" height="950" alt=""
-                class="img-cover">
-            </div>
-
-            <p class="label-2 section-subtitle slider-reveal">Amazing & Unique</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Lorem, ipsum dolor. <br>
-              lorem
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti!
-            </p>
-
-            <a onclick="document.getElementById('contact').scrollIntoView()"" class=" btn btn-primary slider-reveal
-              pointer">
-              <span class="text text-1">Contact Us</span>
-              <span class="text text-2">Contact Us</span>
-            </a>
-
-          </li>
 
         </ul>
-
-        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
-          <ion-icon name="chevron-back"></ion-icon>
-        </button>
-
-        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
-          <ion-icon name="chevron-forward"></ion-icon>
-        </button>
-
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="section service orra-orra text-center" aria-label="service">
-        <div class="container">
-          <p class="section-subtitle label-2">Projects</p>
-          <ul class="grid-list">
-            <!-- Original Cards (existing 3) -->
-            <li>
-              <div class="service-card">
-                <a href="products.html" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="main-imgs/trainmain.jpg" width="285" height="336" loading="lazy" alt="Projects 1"
-                      class="img-cover">
-                  </figure>
-                </a>
-                <div class="card-content">
-                  <h3 class="title-4 card-title">
-                    <a href="trainmain.jpg">Wooden </a>
-                  </h3>
-                  <a href="products.html" class="btn-text hover-underline label-2">View Projects</a>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-                <a href="products.html" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="main-imgs/airmain.jpg" width="285" height="336" loading="lazy" alt="Projects 2"
-                      class="img-cover">
-                  </figure>
-                </a>
-                <div class="card-content">
-                  <h3 class="title-4 card-title">
-                    <a href="#">Wooden </a>
-                  </h3>
-                  <a href="products.html" class="btn-text hover-underline label-2">View Projects</a>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-                <a href="products.html" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="main-imgs/boatmain.jpg" width="285" height="336" loading="lazy" alt="Projects 3"
-                      class="img-cover">
-                  </figure>
-                </a>
-                <div class="card-content">
-                  <h3 class="title-4 card-title">
-                    <a href="products.html">Wooden </a>
-                  </h3>
-                  <a href="products.html" class="btn-text hover-underline label-2">View Projects</a>
-                </div>
-              </div>
-            </li>
-
-            <!-- Mirrored Cards (new 3) -->
-            <li class="mirrored">
-              <div class="service-card">
-                <a href="products.html" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="main-imgs/trainmain.jpg" width="285" height="336" loading="lazy" alt="Projects 1"
-                      class="img-cover">
-                  </figure>
-                </a>
-                <div class="card-content">
-                  <h3 class="title-4 card-title">
-                    <a href="trainmain.jpg">Wooden </a>
-                  </h3>
-                  <a href="products.html" class="btn-text hover-underline label-2">View Projects</a>
-                </div>
-              </div>
-            </li>
-
-            <li class="mirrored">
-              <div class="service-card">
-                <a href="products.html" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="main-imgs/airmain.jpg" width="285" height="336" loading="lazy" alt="Projects 2"
-                      class="img-cover">
-                  </figure>
-                </a>
-                <div class="card-content">
-                  <h3 class="title-4 card-title">
-                    <a href="#">Wooden </a>
-                  </h3>
-                  <a href="products.html" class="btn-text hover-underline label-2">View Projects</a>
-                </div>
-              </div>
-            </li>
-
-            <li class="mirrored">
-              <div class="service-card">
-                <a href="products.html" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="main-imgs/boatmain.jpg" width="285" height="336" loading="lazy" alt="Projects 3"
-                      class="img-cover">
-                  </figure>
-                </a>
-                <div class="card-content">
-                  <h3 class="title-4 card-title">
-                    <a href="products.html">Wooden</a>
-                  </h3>
-                  <a href="products.html" class="btn-text hover-underline label-2">View Projects</a>
-                </div>
-              </div>
-            </li>
-          </ul>
+        
+        <div class="right">
+           <a target = "_blank" href="//sites.google.com/view/mrdwoodshop/home?authuser=0"> <button >Dellapietros website</button></a>
         </div>
-      </section>
+        
+        <div class="toggle">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+
+    <!-- Hero Panel -->
+    <header class="heropanel">
+        <div class="heropanel__content">
+            <h1>Welcome to MRHS Woodworking</h1>
+            <p>Take a look at Projects</p>
+          
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <img src="https://lh5.googleusercontent.com/7OdZ861Fxuj1mHOkPSUl7PQTwaguiIvZFyZFYxfjmMrB1FdKuCaOGRQdy4U6l_wM0YCagDT-A2zYII1xNNt_hV1kINwp4jLNXqAWIMw6vArSp5RA=w1280" class="card-img-top" alt="Mr. Dellapietro">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Deer Palet Sign</h5>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <img src="https://lh5.googleusercontent.com/JTDVOiDx0dKUuV7hb9csriwTsJ5CDUwN-Qy5oA8Nyfey0KjEpwwHP7PRGEnM4GIKPsbT0tEVVvFqf01B0Gjk70l6p62_QN6YwQTJZv90-xkqr9QF=w1280" class="card-img-top" alt="Professional Life">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Thor's Hammer</h5>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <img src="https://lh4.googleusercontent.com/ImsDLKjjHL2BwKyCUF7ddqFZK3rGeuKtkxIYV2-vRwed_V_WFhRgI49f9-GGvSV_eFSh9aeFyseryATy6PZvlTSH_t4ajCZqKBt1rTOMhU-jnn_w=w1280" class="card-img-top" alt="Hobbies and Interests">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nj Palet Sign</h5>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-5">
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <img src="https://lh4.googleusercontent.com/633xspf37H139CLwrywj29l1MRBr20Kt4MhdF8r3bVJ-AcHtHVshXAcCbTf8fZsA32vDTA3SwCgFzuuB3gpxIHyeD2eRY5GMUnxKlOWkSKqjGecC=w1280" class="card-img-top" alt="Workshop">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">BaseBall Bat Table</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <img src="https://lh4.googleusercontent.com/23LZlBCIdfe7CwR43I7EhWWluOXTwlrnmwBxzs7jtcx-x0hOwOoUxUejtRthm-yZDspEC9oUtNrf26UXs6siJAMim7U6bJbD0p7tSFRNRQe4wlPT=w1280" class="card-img-top" alt="Student Project">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Hockey Stick Chair</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <img src="https://lh3.googleusercontent.com/Tf3eeMfSMV0nVlWFdenWG-aR7pIzE8EyLyncHvpTbnuOv4vLWkmLbR_0h0tSBDPDYm2yUZKqqLoIaY0LolNTfLbx7URqif8jXqTzMG7bCPiW_05j=w1280" class="card-img-top" alt="Safety First">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lounge Chair</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 MRHS Woodworking. All rights reserved.</p>
+        </div>
+    </footer>
 
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- 
-    - #BACK TO TOP
-  -->
-
-      <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
-        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-      </a>
-
-
-
-
-
-      <!-- 
-    - custom js link
-  -->
-      <script src="js files/test.js"></script>
-
-      <!-- 
-    - ionicon link
-  -->
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>
